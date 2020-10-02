@@ -5,21 +5,18 @@ class eb{
         String cname;
         float pre_reading,cur_reading,amont = 0;
         int type_of_eb;
-        Scanner get = new Scanner(System.in);
+        Scanner sv = new Scanner(System.in);
         System.out.println("Enter the consumer Number");
-        cno = get.nextInt();
-        Scanner get1 = new Scanner(System.in);
+        cno = sv.nextInt();
+        sv.nextLine();
         System.out.println("Enter the consumer Name");
-        cname = get1.nextLine();
-        Scanner get2 = new Scanner(System.in);
+        cname = sv.nextLine();
         System.out.println("Enter the previous year reading");
-        pre_reading = get2.nextFloat();
-        Scanner get3 = new Scanner(System.in);
+        pre_reading = sv.nextFloat();
         System.out.println("Enter the current year reading");
-        cur_reading = get3.nextFloat();
-        Scanner get4 = new Scanner(System.in);
+        cur_reading = sv.nextFloat();
         System.out.println("For domestic connection press 1\nFor commercial connection press 2");
-        type_of_eb = get4.nextInt();
+        type_of_eb = sv.nextInt();
         if (type_of_eb == 1)
         {
             amont = domestic(cur_reading);
