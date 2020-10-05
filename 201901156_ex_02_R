@@ -1,0 +1,296 @@
+//conv.java
+
+package conversion;
+import java.util.Scanner;
+public class conv{
+    public static void cur_conv(){
+        System.out.println("Select your input type");
+        System.out.println("Press 1 for INR");
+        System.out.println("Press 2 for DOLLAR");
+        System.out.println("Press 3 for EURO");
+        System.out.println("Press 4 for YEN");
+        Scanner a = new Scanner(System.in);
+        int num = a.nextInt();
+        switch (num){
+            case 1:
+                System.out.println("Select your convertion type");
+                System.out.println("Press 1 for DOLLAR");
+                System.out.println("Press 2 for EURO");
+                System.out.println("Press 3 for YEN");
+                System.out.println("Press 4 to see all convertions");
+                Scanner b = new Scanner(System.in);
+                int num2 = b.nextInt();
+                System.out.println("Enter the amount need to be changed");
+                float amt = b.nextFloat();
+                switch (num2){
+                    case 1:
+                        float dol =(float)amt * (float)0.014;
+                        System.out.println("Dollar "+dol);
+                        break;
+                    case 2:
+                        float euro =(float)amt * (float)0.012;
+                        System.out.println("Euro "+euro);
+                        break;
+                    case 3:
+                        float yen = (float)amt * (float)1.43;
+                        System.out.println("Japanese Yen "+yen);
+                        break;
+                    case 4:
+                        float dol1 =(float)amt * (float)0.014;
+                        System.out.println("Dollar "+dol1);
+                        float euro1 =(float)amt * (float)0.012;
+                        System.out.println("Euro "+euro1);
+                        float yen1 = (float)amt * (float)1.43;
+                        System.out.println("Japanese Yen "+yen1);
+                        break;
+                    default:
+                        System.out.println("Looking like there is no match Try again");
+                        System.exit(0);
+                    break;
+                }
+            break;
+            case 2:
+                System.out.println("Select your convertion type");
+                System.out.println("Press 1 for INR");
+                System.out.println("Press 2 for EURO");
+                System.out.println("Press 3 for YEN");
+                System.out.println("Press 4 to see all convertions");
+                Scanner c = new Scanner(System.in);
+                int num3 = c.nextInt();
+                System.out.println("Enter the amount need to be changed");
+                float amt1 = c.nextFloat();
+                switch (num3){
+                    case 1:
+                        float dol =(float)amt1 * (float)73.71;
+                        System.out.println("INR "+dol);
+                        break;
+                    case 2:
+                        float euro =(float)amt1 * (float)0.86;
+                        System.out.println("Euro "+euro);
+                        break;
+                    case 3:
+                        float yen = (float)amt1 * (float)105.45;
+                        System.out.println("Japanese Yen "+yen);
+                        break;
+                    case 4:
+                        float dol1 =(float)amt1 * (float)73.71;
+                        System.out.println("INR "+dol1);
+                        float euro1 =(float)amt1 * (float)0.86;
+                        System.out.println("Euro "+euro1);
+                        float yen1 = (float)amt1 * (float)105.45;
+                        System.out.println("Japanese Yen "+yen1);
+                        break;
+                    default:
+                        System.out.println("Looking like there is no match Try again");
+                        System.exit(0);
+                        break;
+                }
+            break;
+            case 3:
+                System.out.println("Select your convertion type");
+                System.out.println("Press 1 for INR");
+                System.out.println("Press 2 for DOLLAR");
+                System.out.println("Press 3 for YEN");
+                System.out.println("Press 4 to see all convertions");
+                Scanner b2 = new Scanner(System.in);
+                int num4 = b2.nextInt();
+                System.out.println("Enter the amount need to be changed");
+                float amt2 = b2.nextFloat();
+                switch (num4){
+                    case 1:
+                        float dol =(float)amt2 * (float)85.99;
+                        System.out.println("INR "+dol);
+                        break;
+                    case 2:
+                        float euro =(float)amt2 * (float)1.17;
+                        System.out.println("DOLLAR "+euro);
+                        break;
+                    case 3:
+                        float yen = (float)amt2 * (float)123.01;
+                        System.out.println("Japanese Yen "+yen);
+                        break;
+                    case 4:
+                        float dol1 =(float)amt2 * (float)85.99;
+                        System.out.println("INR "+dol1);
+                        float euro1 =(float)amt2 * (float)1.17;
+                        System.out.println("dollar "+euro1);
+                        float yen1 = (float)amt2 * (float)123.01;
+                        System.out.println("Japanese Yen "+yen1);
+                        break;
+                    default:
+                        System.out.println("Looking like there is no match Try again");
+                        System.exit(0);
+                        break;
+                }
+            break;
+            case 4:
+                System.out.println("Select your convertion type");
+                System.out.println("Press 1 for INR");
+                System.out.println("Press 2 for DOLLAR");
+                System.out.println("Press 3 for EURO");
+                System.out.println("Press 4 to see all convertions");
+                Scanner b3 = new Scanner(System.in);
+                int num5 = b3.nextInt();
+                System.out.println("Enter the amount need to be changed");
+                Scanner c3 = new Scanner(System.in);
+                float amt3 = c3.nextFloat();
+                switch (num5){
+                    case 1:
+                        float dol =(float)amt3 * (float)0.70;
+                        System.out.println("INR "+dol);
+                        break;
+                    case 2:
+                        float euro =(float)amt3 * (float)0.0095;
+                        System.out.println("DOLLAR "+euro);
+                        break;
+                    case 3:
+                        float yen = (float)amt3 * (float)0.0081;
+                        System.out.println("EURO "+yen);
+                        break;
+                    case 4:
+                        float dol1 =(float)amt3 * (float)0.70;
+                        System.out.println("INR "+dol1);
+                        float euro1 =(float)amt3 * (float)0.0095;
+                        System.out.println("DOLLAR "+euro1);
+                        float yen1 = (float)amt3 * (float)0.0081;
+                        System.out.println("EURO "+yen1);
+                        break;
+                    default:
+                        System.out.println("Looking like there is no match Try again");
+                        System.exit(0);
+                        break;
+                }
+            break;
+            default:
+                System.out.println("Looking like there is no match Try again");
+                System.exit(0);
+            break;
+        }
+    }
+    public static void time_conv(int inp, int out,float time){
+        float res;
+        switch(inp){
+            case 1:
+                if(out == 1){
+                    System.out.println("converted to hours "+time);
+                }
+                else 
+                if(out == 2){
+                    res =(float) time*60;
+                    System.out.println("converted to minutes "+res);
+                    }
+                else 
+                if(out == 3){
+                    res =(float) time*3600;
+                    System.out.println("converted to Seconds "+res);
+                    }
+                else{
+                    System.out.println("Enter the proper input");
+                }
+            break;
+        
+            case 2:
+                if(out == 1){
+                    res = (float) (time/60);
+                    System.out.println("converted to hours "+res);
+                }
+                else if(out == 2)
+                    System.out.println("converted to minutes "+time);
+                else if(out == 3){
+                    res = (float) (time * 60);
+                    System.out.println("converted to Seconds "+res);}
+                else
+                    System.out.println("Enter the proper input");
+            break;
+            case 3:
+                if(out == 1){
+                    res = (float) (time/3600);
+                    System.out.println("converted to hours "+res);
+                }
+                else if(out == 2){
+                    res = (float) (time / 60);
+                    System.out.println("converted to minutes "+res);}
+                else if(out == 3){
+                    System.out.println("converted to Seconds "+time);}
+                else
+                    System.out.println("Enter the proper input");
+            break; 
+        }
+    }
+    public static void dist_conv(int a , int b, float c){
+        float res;
+        switch(a){
+            case 1:
+                if(b == 1){
+                    System.out.println("converted to Kilometer "+c);
+                }
+                else 
+                if(b == 2){
+                    res =(float) (c*1000);
+                    System.out.println("converted to meter "+res);
+                    }
+                else 
+                if(b == 3){
+                    res =(float) (c*0.621371);
+                    System.out.println("converted to Miles "+res);
+                    }
+                else{
+                    System.out.println("Enter the proper input");
+                }
+            break;
+        
+            case 2:
+                if(b == 1){
+                    res = (float) (c/1000);
+                    System.out.println("converted to Kilometer "+res);
+                }
+                else if(b == 2)
+                    System.out.println("converted to meter "+c);
+                else if(b == 3){
+                    res = (float) (c * 0.000621371);
+                    System.out.println("converted to Miles "+res);}
+                else
+                    System.out.println("Enter the proper input");
+            break;
+            case 3:
+                if(b == 1){
+                    res = (float) (c*1.60934);
+                    System.out.println("converted to Kilometer "+res);
+                }
+                else if(b == 2){
+                    res = (float) (c * 1609.34);
+                    System.out.println("converted to Metre "+res);}
+                else if(b == 3){
+                    System.out.println("converted to Miles "+c);}
+                else
+                    System.out.println("Enter the proper input");
+            break; 
+        }
+
+    }
+}
+
+// test.java
+import java.util.Scanner;
+import conversion.*;
+public class test {
+    public static void main(String[] args) {
+        conversion.conv obj = new conversion.conv();
+        obj.cur_conv();
+        System.out.println("If the input is in\nhours press 1\nminutes press 2\nseconds press 3");
+        Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+        System.out.println("Output should be in \nhours press 1\nminutes press 2\nseconds press 3");
+        int output = sc.nextInt();
+        System.out.println("Enter the time need to be converted");
+        float time = sc.nextFloat();
+        obj.time_conv(input,output,time);
+        System.out.println("If the input is in\nKM press 1\nMetre press 2\nMiles press 3");
+        int input1 = sc.nextInt();
+        System.out.println("Output should be in \nKM press 1\nMetre press 2\nMiles press 3");
+        int output1 = sc.nextInt();
+        System.out.println("Enter the distance need to be converted");
+        float dist = sc.nextFloat();
+        obj.dist_conv(input1,output1,dist);
+    }
+}
