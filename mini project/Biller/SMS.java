@@ -12,7 +12,7 @@ public class SMS {
 		try
 		{
 		
-		String apiKey="ZU190ToozFwkO4dT4ynzZp5sYmOWb3tbAelOzSS27964IJTPd5SOWQ2QXHCj";
+		String apiKey=""//enter the key here;
 		String sendId="FSTSMS";
 		//important step...
 		message=URLEncoder.encode(message, "UTF-8");
